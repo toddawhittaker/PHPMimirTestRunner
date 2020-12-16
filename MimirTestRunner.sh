@@ -14,11 +14,10 @@ for file in *.php; do
   fi
 done
 
-phpunit.phar --log-junit output.xml . > DEBUG
-tests=$(grep '<testcase' output.xml | wc -l)
-failures=$(grep '<failure' output.xml | wc -l)
-errors=$(grep '<error' output.xml | wc -l)
-((passing = $tests - $failures - $errors))
+phpunit.phar --log-teamcity output.log . > DEBUG
+tests=$(grep 'testStarted' output.log | wc -l)
+failures=$(grep 'testFailed' output.log | wc -l)
+((passing = $tests - $failures))
 ((score = $passing * 100 / $tests))
 echo "You passed $passing out of $tests, earning $score%% of points"
 echo "$score" > OUTPUT
