@@ -1,9 +1,9 @@
 # PHPMimirTestRunner
 A script and support files for running JUnit 4 tests in programming quesions in MimirHQ
 
-Mimir is an excellent tool for teaching computer science. However, their test case  
-syntax leaves something to be desired if you've worked with XUnit. You don't have  
-access to the assertions that XUnit has, nor the ability to define functions for setUp()  
+Mimir is an excellent tool for teaching computer science. However, their test case 
+syntax leaves something to be desired if you've worked with XUnit. You don't have
+access to the assertions that XUnit has, nor the ability to define functions for setUp() 
 or tearDown() or any other custom function. It's a fairly severe limitation.  
 
 For PHP in particular, this is exacerbated by the lack of custom testing support (per
@@ -25,7 +25,7 @@ for the problem
 ```bash
 # To use this script:
 #   Add "Optional" files containing your test cases
-#   (file names must macth ".*Test.php$" or ".*_test.php" regex) and
+#   (file names should match "^.*Test.php$" or "^.*_test.php$" regex) and
 #   any other supplemental files you want to participate in the testing
 #   You could also wget those file from a github source.
 
