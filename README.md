@@ -10,7 +10,7 @@ For PHP in particular, this is exacerbated by the lack of custom testing support
 their support folks). There isn't even a `php` executable in the docker image (Ubuntu 16.04).
 
 This little repo solves that problem and lets you run any number of PHPUnit tests. There's
-a provided PHP CLI executable and it's automatically included in the download (thanks to @twhitney11).
+a provided PHP CLI executable and it's automatically included in the download (thanks to [@twhitney11](https://github.com/twhitney11)).
 
 ## How to use
 1. Create a new "Code Question" in Mimir.
