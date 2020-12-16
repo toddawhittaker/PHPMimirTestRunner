@@ -1,5 +1,5 @@
 # PHPMimirTestRunner
-A script and support files for running JUnit 4 tests in programming quesions in MimirHQ
+A script and support files for running PHPUnit tests in programming quesions in MimirHQ
 
 Mimir is an excellent tool for teaching computer science. However, their test case 
 syntax leaves something to be desired if you've worked with XUnit. You don't have
