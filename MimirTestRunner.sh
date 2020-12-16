@@ -19,5 +19,6 @@ tests=$(grep 'testStarted' output.log | wc -l)
 failures=$(grep 'testFailed' output.log | wc -l)
 ((passing = $tests - $failures))
 ((score = $passing * 100 / $tests))
-echo "You passed $passing out of $tests, earning $score%% of points" >> DEBUG
+echo ""
+echo "You passed $passing out of $tests tests, earning $score% of possible points" >> DEBUG
 echo "$score" > OUTPUT
